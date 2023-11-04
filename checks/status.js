@@ -30,7 +30,7 @@ const tweet = up.length === sites.length
     ? `✅ - All Services are currently Operational. [&time, &date]`.replace(/&time/g, new Date().toLocaleTimeString()).replace(/&date/g, new Date().toLocaleDateString())
     : `❌ - ${down.join(', ')} is currently down. [&time, &date]`.replace(/&time/g, new Date().toLocaleTimeString()).replace(/&date/g, new Date().toLocaleDateString());
 
-client.post('statuses/update', {status: tweet}, (error, tweet, response) => {
+client.post('statuses/update', { status: tweet }, (error, tweet, response) => {
   if (error) throw error;
   console.log(tweet);  // Tweet body.
   console.log(response);  // Raw response object.
