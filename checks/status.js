@@ -2,11 +2,7 @@ import("dotenv").config();
 import https from "https";
 import Twitter from "twitter";
 
-const sites = [
-  'https://tresthost.me',
-  'https://dash.tresthost.me',
-  'https://panel.tresthost.me'
-];
+import sites from "../config.js";
 
 const client = new Twitter({
   consumer_key: process.env.TWITTER_CONSUMER_KEY,
