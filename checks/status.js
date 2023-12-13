@@ -2,7 +2,7 @@ import("dotenv").config();
 import https from "https";
 import Twitter from "twitter";
 
-import sites from "@config/sites.js";
+import sites from "../config/sites.js";
 
 const client = new Twitter({
   consumer_key: process.env.TWITTER_CONSUMER_KEY,
