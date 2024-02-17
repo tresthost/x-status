@@ -1,4 +1,4 @@
-import("dotenv").config();
+import("dotenv/config");
 import https from "https";
 import Twitter from "twitter";
 

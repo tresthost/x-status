@@ -1,6 +1,5 @@
 const sites = [
-    'https://dash.trest.host',
-    'https://panel.trest.host'
+    'https://www.trest.host'
 ];
 
 export default sites;
